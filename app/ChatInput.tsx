@@ -41,7 +41,10 @@ function ChatInput() {
       return [data.message, ...messages!];
     };
 
-    await mutate(uploadMessageToUpstash) //update cache with new message
+    await mutate(uploadMessageToUpstash, {
+      optimisticData: [message, ...messages!],
+      rollbackOnError:true,
+    }); //update cache with new message
   };
 
   return (
