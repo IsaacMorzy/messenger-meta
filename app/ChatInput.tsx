@@ -10,7 +10,7 @@ function ChatInput() {
   const [input, setInput] = useState("");
   const { data: messages, error, mutate } = useSWR("/api/getMessages", fetcher); //fetch messages and store them in cache
 
-  console.log(messages);
+  // console.log(messages);
 
   const addMessage = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
