@@ -2,7 +2,7 @@
 module.exports = {
   reactStrictMode: true,
   images: {
-    domains: ['links.papareact.com','https://picsum.photos'],
+    domains: ['links.papareact.com','res.cloudinary.com','picsum.photos'],
   },
   experimental: { 
     appDir: true 

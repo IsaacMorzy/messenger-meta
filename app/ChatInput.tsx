@@ -27,7 +27,7 @@ function ChatInput() {
       message: messageToSend,
       created_at: Date.now(),
       username: "zack morzy",
-      profilePic: "https://picsum.photos/100",
+      profilePic: "https://res.cloudinary.com/threads-collection/image/upload/v1665786537/avatarp.png",
       email: "morzyzack@gmail.com",
     };
 
@@ -50,7 +50,7 @@ function ChatInput() {
   return (
     <form
       onSubmit={addMessage}
-      className="fixed bottom-0 z-50 w-full px-10 py-5 space-x-2 border-t border-gray-100"
+      className="fixed bottom-0 z-50 w-full px-10 py-5 space-x-2 border-t bg-white border-gray-100"
     >
       <input
         type="text"
